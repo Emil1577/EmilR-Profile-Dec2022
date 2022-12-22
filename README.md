@@ -9,17 +9,7 @@ This webpage contains my portfolio which includes my recent photo, companies I'v
 
 Below is the CSS Style font styles and colors I used.
 
-:root {
 
-    --bluebackground-color: #003e53;
-    --graybackground-color: #54595f;
-    --background-color: rgb(234, 234, 189);
-    --H1-color: rgb(150, 92, 35);
-    ---Sans-font: var(---Sans-font);
-    --paragrph-color: #7a7a7a;
-    --tiltle-color: #8dac86;
-    
-}
     
     
 Here is the basic html
@@ -46,13 +36,16 @@ Here is the basic html
 
         </header>
         
-        header{
+        
+Here is the CSS Styling:
 
-    height: 160px;
-    width: 100%;
-    background-color: rgb(121, 178, 228);
-    
-}
+           header{
+
+            height: 160px;
+            width: 100%;
+            background-color: rgb(121, 178, 228);
+
+            }
 
 Header CSS Styles -  to align elements in the center and a limit of 1000px.
 
@@ -93,7 +86,7 @@ Navigation, contains links to scroll to the page targetting the desired location
 
                     <h2>  My Work </h2>
                     
-Class elemtn "mywork:, include photos for each class and a Javascript.  CSS file is created to properly distribute the images and when you scroll to the image, the image will enlarge. 
+Class "mywork:, include photos for each class and a Javascript.  CSS file is created to properly distribute the images and when you scroll to the image, the image will enlarge. 
 
                 <div class="mywork">
 
