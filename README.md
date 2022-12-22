@@ -1,60 +1,238 @@
 # EmilR-Profile-Dec2022
 
-## Setup the HTML 
 
-## Setup the html head and CSS file.
+## Description: 
 
-## Setting up the Semantics based on the requirements for this project.
+This webpage contains my portfolio which includes my recent photo, companies I've worked with and projects that I completed. This page includes navigation links that will map and scroll you to the page described in the link. If your scroll through each images on "My Work" section, each photo will enlarge to verify your selection.   If you click on "Contact" the page will scroll to the footer section.  The footer section provides you link to email me, visit my Github and LinkedIn page. My webpage is easily accessible and can be viewed either on your mobile phone, laptop or desktop clearly at any given time.
 
-### Setup the header, navigation, main and the footer elements, Created the configurations for each element.  Created a CSS ":root" for the colors and fonts that will be use for this project.  
+## Setting up the HTML and the variables 
 
-## Setting up the layout of the page.
+Below is the CSS Style font styles and colors I used.
 
-### Created the elements for each semantics (header, nav, main, footer) .  I set all elements to have a max-width of 1000px and auto align to center at the CSS file.  
+:root {
 
-### ".my-header" is the element inside the Header  containing the configuration of the element.  Inside is my profile photo and the text box.  Created a CSS file for this element.
+    --bluebackground-color: #003e53;
+    --graybackground-color: #54595f;
+    --background-color: rgb(234, 234, 189);
+    --H1-color: rgb(150, 92, 35);
+    ---Sans-font: var(---Sans-font);
+    --paragrph-color: #7a7a7a;
+    --tiltle-color: #8dac86;
+    
+}
+    
+    
+Here is the basic html
 
-### The main containers has the ".aboutme" and "mywork", Created a CSS file for this element.
+       <head>
+        <meta charset="utf-8">
+        <meta name="Emil Ronquillo Portfolio" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./assets/css/reset.css">
+        <link rel="stylesheet" href="./assets/css/style.css">
+       </head>
+      
+
+## Set up the Semantics for the header and the CSS Style.
+
+        <header>
+
+            <div class="my-header">
+
+               <img class="my-profile-photo" src="./assets/images/emil.jpg" alt="My Photo"/>
+               <h1> Emil Ronquillo</h1>
+
+            </div>
+
+        </header>
+        
+        header{
+
+    height: 160px;
+    width: 100%;
+    background-color: rgb(121, 178, 228);
+    
+}
+
+Header CSS Styles -  to align elements in the center and a limit of 1000px.
+
+    .my-header {
+    
+    //border: 1px solid red;
+    padding: 20px;
+    height: 160px;
+    display: flex;
+    align-items: baseline;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+
+    }
+    
+Navigation, contains links to scroll to the page targetting the desired location using the id class.
+
+            <div class="navigation">
+              <ul>
+                <a href= "#aboutme" > About me</a>
+                <a href="#mywork"  > My Work</a> 
+                <a href="#contactme"> Contact </a>
+             </ul>
+             </div>
+
+        </nav>
+
+            <div id="aboutme" > 
+            <section class="section-container"> 
+            .
+            .
+            .
+            <div id="mywork">
+            <section class="section-container"> 
+
+                <div class="section1">
+
+                    <h2>  My Work </h2>
+                    
+Class elemtn "mywork:, include photos for each class and a Javascript.  CSS file is created to properly distribute the images and when you scroll to the image, the image will enlarge. 
+
+                <div class="mywork">
+
+                    <div class="surfreport">
+                        <a href="javascript:alert('Javascript Placeholder');"> <img src="./assets/images/Painted ladies.jpeg">
+                            <div class="text-block">
+                                <h4>Golden State</h4>
+                                <p>Javascript here</p>
+                            </div>
+                    </div>
+
+                    <div class="ledwall">
+                        <a href="javascript:alert('Javascript Placeholder');"> <img src="./assets/images/cars.jpeg" >
+                            <div class="text-block">
+                                <h4>Dream Car<</h4>
+                                <p>Javascript here</p>
+                            </div>                  
+                        </div>
+             
+                    <div class="calculator">
+                        <a href="javascript:alert('Javascript Placeholder');"><img src="./assets/images/clock.jpeg" >
+                            <div class="text-block">
+                                <h4>Clock</h4>
+                                <p>Javascript here</p>
+                            </div>
+                        </div>
+                    
+                    <div class="pastelpuzzle">
+                        <a href="javascript:alert('Javascript Placeholder');"><img src="./assets/images/train.jpeg" >
+                            <div class="text-block">
+                                <h4>Future Train</h4>
+                                <p>Javascript here</p>
+                            </div>
+                        </div>
+               
+                    <div class="runbuddy">
+                        <a href="javascript:alert('Javascript Placeholder');"><img src="./assets/images/Novato2_(cropped).jpeg" >
+                        <div class="text-block">
+                            <h4>My City</h4>
+                            <p>Javascript</p>
+                        </div>
+                    </div>   
+            
+The CSS Style below for the first image maintains the image width.
+
+                    .surfreport{
+
+                    width: 750px;
+                    height: auto;
+                    position: relative;
+
+                    }
+                    
+ The CSS Styke below will allow us to move the images when window screen is decreased
+ 
+
+                   .ledwall, .calculator, .runbuddy, .pastelpuzzle{
+
+                      width: 350px;
+                      height: auto;
+                      position: relative;
+
+                  }
+            
+Footer - each list includes href directing you to my links on how to contact me.
+
+                  <div id="contactme"  div>
+
+                      <ul>
+                           <a href="mailto:emilronquillo@gmail.com"> Contact Me        </a>
+                           <a href="https://github.com/Emil1577"  > Portfolio     </a> 
+                           <a href=" https://www.linkedin.com/in/emil-ronquillo-76832a32/" > Resume </a>
+                       </ul>
+                  </div>
+
+Here is the footer CSS maintaining the footer in center even when screen size is adjusted.
+
+                  footer {
+                      background-color: var(--bluebackground-color);
+                      font-size: 200%;
+                      width: 100%;
+                      font-size: 150%;
+                      height: 150px;
+                      position: relative
+                  }
+
+## Making this webpage viewable through different screen sies including smartphones.
+
+Created a CSS style media screen. The text and images will automatically adjust depending on the browser window.
+
+     @media screen and (max-width: 1016px) {
+
+                .section1 {
+
+                    border-right: 0;
+                    width:100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items:flex-end;
+                }
+                .aboutme {
+
+                    width: 100%;
+                }
+
+                h1 {
+
+                    font-size: 220%;
+                }
+
+                .mywork {
+
+                    position: relative;
+                    width: 100%;
+                }
+
+                .ledwall, .calculator, .runbuddy, .pastelpuzzle{
+
+                    margin: 0 auto;
+
+                }
+
+                .section-container {
+
+                    //border: 3px solid rgb(47, 0, 255);
+                    padding: 20px 0 0;
+
+                }
+
+                .surfreport{
+
+                    width: 100%;
+                    height: auto;
+                }
 
 
-## .main element - has two division which are "aboutme" and "mywork".  These elements are set 100% width and which are relative to the main element used the flex and wrap direction row within the container.  
+## Thank you
 
-## Created a class container of "section-container" which has "section1" and "mywork",  the CSS for this container is created.  
-
-### Under this container has "section1" which is used a label on the left side acting like a aside.  This has text "About Me" and "My work".   Did this so I can create just one CSS.
-
-## "mywork" element:
-
-### Created five different element.  Which are "surfreport", "ledwall", "calculator", "pastelpuzzle", "runbuddy".  Unfortunately I was not able to update the names of this element to match the images.   
-
-### All elements except "surfreport has the same style in the CSS.  CSS is identified as ".ledwall, .calculator, .runbuddy, .pastelpuzzle".
-
-### ".surfreport" has a different style to I can make the image 100% width of the "mywork" container.
-
-### In summary I divided the each "section-container iin to two elements to separate the "section1" (which has the text "About me" and "My Work".) . I did this so when changing the size of the window it will flex propoerly on both sides.
-
-## Images
-
-### I set a href for each element as a Javascript alert.
-
-### CSS style for all except for the "surfreport is the same.
-
-### created a "text-box" element and style in the CSS.  The text box is relative to the  which is relative the class of each images.  This is to bring the text inside the image and when the images move it goes with the position of the image.
-
-## Scrolls to the webpage when selected.
-
-###  Created and id label before the division of where I want to scroll the page.  Example <div id="aboutme" > .  Under the navigation I created a link example " <a href= "#aboutme" > About me</a>" So when I click this link it scrolls to the page where I placed the <div id="aboutme" > .
-
-
-## Screen resizing max-width 1016px;
-
-### ".section1 - I change the CSS style to make the lement on top of the "aboutme" and "myWork"
-
-### h1 - change to make the text smaller to fit on the phone.
-
-### surfreport - I change this to retain it's position on top making the height adopts to the screen  size.
-
-
+I hope you enjoy viewing my Portfolio webpage.  Feel free to reach out.
 
 
 
